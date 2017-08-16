@@ -1,0 +1,23 @@
+
+<header class="row">
+    <a href="/" class="center">
+        <div id="headerimage"> 
+            <%= image_tag("headlinerbeatriceguggerklein72dpi.jpg", class:"image_for_header")%>
+        </div>
+    </a>
+    
+   
+
+
+    <nav>
+        <ul>
+            <li> <%= link_to "Home", root_path,  class: "col-3 col-m-3"%></li>
+            <li> <%= link_to "Konzerte", gigs_path, class: "col-3 col-m-3"%></li>
+            <li> <%= link_to "Kontakt", gigs_path, class: "col-3 col-m-3" %></li>
+            <li> <%= link_to "Über mich", root_path,  class: "col-3 col-m-3"%></li>
+
+
+        </ul>
+    </nav>
+    
+</header>

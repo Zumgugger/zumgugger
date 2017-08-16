@@ -1,0 +1,197 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+*/
+
+#wrapper {
+    min-height: 100%;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+header {
+font-weight: bold;
+font-size: 1em;
+}
+
+#headerimage {
+max-width: 100%;
+}
+
+.image_for_header {
+max-width: 100%;
+overflow: hidden;
+}
+
+
+
+nav {
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+}
+
+nav ul li {
+    text-align: center;
+    
+}
+
+nav ul li a {
+
+}
+
+.content {
+    position:relative;
+    padding-bottom: 2.5em;
+}
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    height: 2.5em;
+}
+
+
+ /*Seitl Abstand um den Inhalt*/
+@media only screen and (min-width: 600px) {
+    .middle-m { 
+    width:80%;
+    height:100%;
+    margin:auto;}
+    nav ul li a{
+    padding-bottom: 1em;
+    }
+    span.text-content {font-size: 3vw;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+span.text-content {font-size: 1.15vw;
+    }   
+.middle {
+    width:60%;
+    height:100%;
+    margin:auto;}
+}
+ /* For mobile phones: */
+@media only screen and (max-width: 600px){
+    
+span.text-content {font-size: 6vw;
+    }
+.middle-mobile {
+    width: 90%;
+    height:100%;
+    margin:auto;}
+    nav ul li a{
+    padding-bottom: 1em;
+    }
+    
+
+    
+}
+
+.center {
+    text-align: center;
+    }
+
+.clear { 
+    clear: both;}
+
+.red {
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+
+.nopadding {
+    margin-top: -10%;
+}
+    
+section {
+    float: left;
+        
+    }
+section img {
+    width: 50%;
+    float:right;
+    }
+
+.box{	
+    position: relative;
+}
+
+.boxcontent {
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right:0;
+}
+
+.box:before {
+	content: "";
+	display: block;
+	padding-top: 100%; 	/* initial ratio of 1:1*/
+}
+
+
+.boxcontent img {
+    max-width: 80%;
+    padding: 10%;
+    max-height: 100%
+}
+
+span.text-content {
+    background: rgba(0,0,0,0.5);
+    color: white;
+    font-weight: bold;
+    display: table;
+    width: 80%;
+    height: 80%;
+    opacity: 0;
+    position:absolute;
+    left: 10%;
+    top:10%;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+span.text-content span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.cat-image:hover span.text-content {
+  opacity: 1;
+}
+
+/* forms */
+
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 100%;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+input {
+  height: auto !important;
+}
+
+#error_explanation {
+  color: red;
+}
